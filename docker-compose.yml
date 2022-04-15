@@ -1,0 +1,12 @@
+version: "3"
+services:
+  agent:
+    build: ./
+    image: dcagatay/azp-sample-agent:latest
+    privileged: true
+    environment:
+      AZP_URL: "https://dev.azure.com/xxxyyzzz"
+      AZP_TOKEN: ""
+      AZP_AGENT_NAME: "my-agent"
+      # AZP_WORK: "_work"
+      # AZP_POOL:	"Default"
